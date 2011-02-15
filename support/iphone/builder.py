@@ -877,6 +877,10 @@ def main(args):
 				if os.path.exists(defaultpng_path):
 					shutil.copy(defaultpng_path,app_dir)
 
+				stylesheet_path = os.path.join(iphone_dir, 'Resources', 'stylesheet.plist')
+				if os.path.exists(stylesheet_path):
+					shutil.copy(stylesheet_path,app_dir)
+
 				extra_args = None
 
 				if devicefamily!=None:
